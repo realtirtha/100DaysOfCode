@@ -1,0 +1,3 @@
+i did use 
+
+git restore abc.txt command and it's just gone???
