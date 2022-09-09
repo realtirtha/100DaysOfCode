@@ -20,3 +20,7 @@
 1. Add Remote Repository : **git remote add {{origin}} {{url}}**
 1. Detailed information of remote repository : **git remote show {{origin}}**
 
+## Synchronize Changes
+1. Downloads all history from the remote repo: **git fetch**
+2. Combines remote tracking branch into current local branch: **git merge {{branch to be merged}}**
+3. Uploads all local branch commits to GitHub: **git push {{origin}} {{branch-name}}**
