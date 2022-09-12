@@ -14,33 +14,32 @@
             Console.WriteLine("Enter the number of day:");
             var num = Convert.ToInt32(Console.ReadLine());
 
-            if (num==1)
+            switch (num)
             {
-                Console.WriteLine("sunday");
-            }
-            else if (num == 2)
-            {
-                Console.WriteLine("monday");
-            }
-            else if (num == 3)
-            {
-                Console.WriteLine("tuesday");
-            }
-            else if (num == 4)
-            {
-                Console.WriteLine("wednesday");
-            }
-            else if (num == 5)
-            {
-                Console.WriteLine("thursday");
-            }
-            else if (num == 6)
-            {
-                Console.WriteLine("friday");
-            }
-            else if (num == 7) 
-            {
-                Console.WriteLine("saturday");
+                case 1:
+                    Console.WriteLine("sunday");
+                    break;
+                case 2:
+                    Console.WriteLine("monday");
+                    break;
+                case 3:
+                    Console.WriteLine("tuesday");
+                    break;
+                case 4:
+                    Console.WriteLine("wednesday");
+                    break;
+                case 5:
+                    Console.WriteLine("thursday");
+                    break;
+                case 6:
+                    Console.WriteLine("friday");
+                    break;
+                case 7:
+                    Console.WriteLine("saturday");
+                    break;
+                default:
+                    Console.WriteLine("not a valid input");
+                    break; 
             }
 
         }
