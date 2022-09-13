@@ -21,6 +21,7 @@
 
          static void LoopingStatement()
         {
+            Console.WriteLine("looping activated");
             //known quantity and unknown quantity
             //for, foreach, while, do while
             //unknown: while & do while
