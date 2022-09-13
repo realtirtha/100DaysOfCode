@@ -37,6 +37,26 @@
                 i++;
             } while (i <= 10);
 
+            Console.WriteLine("=======================================");
+            Console.WriteLine("using for loop");
+
+            for ( i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(num + " x " + i + " " + " = " + num * i);
+            }
+
+            Console.WriteLine("=======================================");
+            Console.WriteLine("using while loop");
+             i = 1;
+            while (i <= 10)
+            {
+                Console.WriteLine(num + " x " + i + " " + " = " + num * i);
+                i++;
+            }
+
+            Console.WriteLine("=======================================");
+
+
         }
 
         static void ControlStatementExample()
