@@ -10,21 +10,32 @@
             do
             {
 
-            //ControlStatementExample();
-
-            LoopingStatement();
-            
-            Console.WriteLine("Do you want to run once more? (y/n)");
+                //ControlStatementExample();
+                LoopingStatement();
+                Console.WriteLine("Do you want to run once more? (y/n)");
+                res = Console.ReadLine();
 
             }while(res.ToUpper() == "Y");
         }
 
-         static void LoopingStatement()
+        static void LoopingStatement()
         {
-            Console.WriteLine("looping activated");
             //known quantity and unknown quantity
             //for, foreach, while, do while
             //unknown: while & do while
+
+            Console.WriteLine("enter the number");
+            var num = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("=======================================");
+            Console.WriteLine("using do while");
+
+            int i = 1;
+            do
+            {
+                Console.WriteLine(num+" x "+i+" "+ " = "+num*i);
+                i++;
+            } while (i <= 10);
 
         }
 
