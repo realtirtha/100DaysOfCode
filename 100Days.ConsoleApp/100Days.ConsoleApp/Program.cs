@@ -14,6 +14,13 @@
             Console.WriteLine("Enter the number of day:");
             var num = Convert.ToInt32(Console.ReadLine());
 
+            SwitchStatement(num);
+        }
+
+        
+
+        private static void SwitchStatement(int num)
+        {
             switch (num)
             {
                 case 1:
@@ -39,9 +46,8 @@
                     break;
                 default:
                     Console.WriteLine("not a valid input");
-                    break; 
+                    break;
             }
-
         }
     }
 }
