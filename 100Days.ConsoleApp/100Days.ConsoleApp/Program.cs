@@ -31,6 +31,10 @@
             string template = "{0} {1}";
             var res2 = string.Format(template, a, b);
             Console.WriteLine(res2);
+
+            //string interpolation
+            var res3 = $"{a} {b}, => {a} and {b}";
+            Console.WriteLine(res3);
         }
 
         static void LoopingExample()
