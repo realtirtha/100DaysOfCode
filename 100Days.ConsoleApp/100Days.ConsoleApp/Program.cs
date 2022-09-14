@@ -12,7 +12,8 @@
 
                 //ControlStatementExample();
                 //LoopingStatement();
-                LoopingExample();
+                //LoopingExample();
+                StringConcatenation();
                 Console.WriteLine("Do you want to run once more? (y/n)");
                 res = Console.ReadLine();
 
@@ -21,7 +22,15 @@
 
         static void StringConcatenation()
         {
+            string a = "hello";
+            string b = "world";
+            string res1 = a + " " + b; //concatenation
+            Console.WriteLine(res1);
 
+            //formating
+            string template = "{0} {1}";
+            var res2 = string.Format(template, a, b);
+            Console.WriteLine(res2);
         }
 
         static void LoopingExample()
