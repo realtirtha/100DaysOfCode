@@ -33,6 +33,12 @@
             int i = 1;
             do
             {
+                if (i == 5)
+                {
+                    //break;
+                    i++;
+                    continue;
+                }
                 Console.WriteLine(num+" x "+i+" "+ " = "+num*i);
                 i++;
             } while (i <= 10);
