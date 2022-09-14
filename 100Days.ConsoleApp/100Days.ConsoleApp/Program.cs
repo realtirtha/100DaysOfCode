@@ -11,11 +11,34 @@
             {
 
                 //ControlStatementExample();
-                LoopingStatement();
+                //LoopingStatement();
+                LoopingExample();
                 Console.WriteLine("Do you want to run once more? (y/n)");
                 res = Console.ReadLine();
 
             }while(res.ToUpper() == "Y");
+        }
+
+        static void StringConcatenation()
+        {
+
+        }
+
+        static void LoopingExample()
+        {
+            string[] days = new string[] { "Sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday" };
+
+            Console.WriteLine("\nusing for loop:");
+            for (int i = 0; i < days.Length-1; i++)
+            {
+                Console.WriteLine(days[i]); 
+            }
+
+            Console.WriteLine("\nusing for each loop:\n");
+            foreach (var item in days)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         static void LoopingStatement()
