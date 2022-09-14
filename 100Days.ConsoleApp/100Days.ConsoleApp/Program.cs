@@ -1,4 +1,6 @@
-﻿namespace _100Days.ConsoleApp
+﻿using System.Text;
+
+namespace _100Days.ConsoleApp
 {
     internal class Program
     {
@@ -35,6 +37,14 @@
             //string interpolation
             var res3 = $"{a} {b}, => {a} and {b}";
             Console.WriteLine(res3);
+
+            //string builder
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Dear sir,");
+            sb.AppendLine("\t I'm doing really well. how about you?");
+            var result = sb.ToString();
+            Console.WriteLine(result);
+
         }
 
         static void LoopingExample()
