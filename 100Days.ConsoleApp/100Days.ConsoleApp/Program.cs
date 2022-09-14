@@ -2,14 +2,14 @@
 
 namespace _100Days.ConsoleApp
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
 
             var res = "n";
-            do
+            do 
             {
 
                 //ControlStatementExample();
@@ -20,6 +20,13 @@ namespace _100Days.ConsoleApp
                 res = Console.ReadLine();
 
             }while(res.ToUpper() == "Y");
+        }
+
+        static void ClassAndObjects()
+        {
+            HumanBeing nabin = new HumanBeing();
+            HumanBeing bhim = new HumanBeing();
+            
         }
 
         static void StringConcatenation()
