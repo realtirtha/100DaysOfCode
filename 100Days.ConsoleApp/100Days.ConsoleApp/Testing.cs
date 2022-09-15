@@ -33,5 +33,22 @@
         {
 
         }
+
+        public readonly int age = 0;
     }
+
+    public class StudentInfo
+    {
+        public StudentInfo()
+        {
+            Name = "Babu";
+        }
+        public StudentInfo(string name)
+        {
+            Name = name;
+        }
+
+        public string Name;
+    }
+
 }

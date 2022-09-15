@@ -15,11 +15,24 @@ namespace _100Days.ConsoleApp
                 //ControlStatementExample();
                 //LoopingStatement();
                 //LoopingExample();
-                StringConcatenation();
+                //StringConcatenation();
+                //ClassAndObjects();
+                ClassAndObjectV2();
                 Console.WriteLine("Do you want to run once more? (y/n)");
                 res = Console.ReadLine();
 
             }while(res.ToUpper() == "Y");
+        }
+
+        static void ClassAndObjectV2()
+        {
+             StudentInfo nabin = new StudentInfo("Nabin");
+            StudentInfo bhim = new StudentInfo();
+
+            Console.WriteLine($"Name of Bhim object is {bhim.Name}");
+            Console.WriteLine($"Name of Nabin object is {nabin.Name}");
+
+
         }
 
         private static void ClassAndObjects()
@@ -27,9 +40,13 @@ namespace _100Days.ConsoleApp
             HumanBeing nabin = new HumanBeing();
             HumanBeing bhim = new HumanBeing();
             nabin = new HumanBeing();
+
+            Console.WriteLine(nabin.age);
             
             var i = 10l;
             bhim = new HumanBeing(i);
+
+            Console.WriteLine(bhim.age);
             
         }
 
