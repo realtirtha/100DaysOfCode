@@ -26,6 +26,7 @@ namespace _100Days.ConsoleApp
         {
             HumanBeing nabin = new HumanBeing();
             HumanBeing bhim = new HumanBeing();
+            nabin = new HumanBeing();
             
         }
 

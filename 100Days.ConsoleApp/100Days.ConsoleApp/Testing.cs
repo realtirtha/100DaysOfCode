@@ -2,6 +2,9 @@
 {
     public class HumanBeing
     {
-        
+        public HumanBeing()
+        {
+                
+        }
     }
 }
