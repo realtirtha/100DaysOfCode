@@ -28,5 +28,10 @@
         {
              
         }
+
+        public HumanBeing(long y)
+        {
+
+        }
     }
 }

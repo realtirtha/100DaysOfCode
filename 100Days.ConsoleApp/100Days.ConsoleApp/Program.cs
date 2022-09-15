@@ -28,6 +28,9 @@ namespace _100Days.ConsoleApp
             HumanBeing bhim = new HumanBeing();
             nabin = new HumanBeing();
             
+            var i = 10l;
+            bhim = new HumanBeing(i);
+            
         }
 
         private static void StringConcatenation()
