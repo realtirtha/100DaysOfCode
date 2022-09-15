@@ -22,7 +22,7 @@ namespace _100Days.ConsoleApp
             }while(res.ToUpper() == "Y");
         }
 
-        static void ClassAndObjects()
+        private static void ClassAndObjects()
         {
             HumanBeing nabin = new HumanBeing();
             HumanBeing bhim = new HumanBeing();
@@ -30,7 +30,7 @@ namespace _100Days.ConsoleApp
             
         }
 
-        static void StringConcatenation()
+        private static void StringConcatenation()
         {
             string a = "hello";
             string b = "world";
