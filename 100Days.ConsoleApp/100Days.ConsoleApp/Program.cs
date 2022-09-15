@@ -29,8 +29,11 @@ namespace _100Days.ConsoleApp
              StudentInfo nabin = new StudentInfo("Nabin");
             StudentInfo bhim = new StudentInfo();
 
-            Console.WriteLine($"Name of Bhim object is {bhim.Name}");
-            Console.WriteLine($"Name of Nabin object is {nabin.Name}");
+            Console.WriteLine($"Name of Bhim object is {bhim._name}");
+            Console.WriteLine($"Name of Nabin object is {nabin._name}");
+
+            bhim.Name = "Bhim Prasad Rajbansi";
+            nabin.Name = "Balkrishna Shrestha";
 
 
         }
