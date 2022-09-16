@@ -68,11 +68,11 @@
             {
                 if (value > _max)
                 {
-                    _math = _max;
-                }
+                    throw new Exception($"Numbers cannot be greater than {_max}");
+                } 
                 else if (value < _min)
                 {
-                    _math = _min;
+                    throw new Exception($"Numbers cannot be less than {_min}");
                 }
                 else
                 {
