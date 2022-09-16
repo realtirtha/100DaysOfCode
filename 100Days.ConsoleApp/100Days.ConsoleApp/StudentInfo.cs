@@ -11,6 +11,13 @@
             _name = name;
         }
 
+        public StudentInfo(double min, double max, double pass)
+        {
+            _min = min;
+            _max = max; 
+            _pass = pass;
+        }
+
         public string _name;
 
         public string Name
@@ -19,21 +26,63 @@
             {
                 return _name; 
             }
+            set
+            {
+                _name = value;
+            }
         }
-        public int Age { get; set; }
-        public int _age;
-        public int Ages
+        //public int Age { get; set; }
+        private int _age;
+        public int Age
         {
             get
             {
-                return Age;
+                return _age;
             }
             set
             {
-                _age = value;
+                if (value > 100)
+                {
+                    _age = 100;
+                }
+                else if (value < 5)
+                {
+                    _age = 5;
+                }
+                else 
+                    _age = value;
             }
 
         }
+
+
+        private double _min = 0;
+        private double _max = 100;
+        private double _pass = 40;
+
+        private double _math;
+        public double Math
+        {
+            get { return _math; }
+            set
+            {
+                if (value > _max)
+                {
+                    _math = _max;
+                }
+                else if (value < _min)
+                {
+                    _math = _min;
+                }
+                else
+                {
+                    _math = value;
+                }
+            }
+        }
+
+
+
     }
 
 }

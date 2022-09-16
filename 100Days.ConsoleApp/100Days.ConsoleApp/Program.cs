@@ -26,15 +26,20 @@ namespace _100Days.ConsoleApp
 
         static void ClassAndObjectV2()
         {
-             StudentInfo nabin = new StudentInfo("Nabin");
-            StudentInfo bhim = new StudentInfo();
+            //StudentInfo nabin = new StudentInfo("Nabin");
+            StudentInfo student = new StudentInfo(0,80,32); 
 
-            Console.WriteLine($"Name of Bhim object is {bhim._name}");
-            Console.WriteLine($"Name of Nabin object is {nabin._name}");
+            Console.WriteLine("Enter the name:");
+            student.Name = Console.ReadLine();
 
-            bhim.Name = "Bhim Prasad Rajbansi";
-            nabin.Name = "Balkrishna Shrestha";
+            Console.WriteLine("Enter the age:");
+            student.Age = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Enter the math marks:");
+            student.Math = Convert.ToDouble(Console.ReadLine());
+
+
+            Console.WriteLine($"Info is \nName: {student.Name}\n Age: {student.Age}");
 
         }
 
