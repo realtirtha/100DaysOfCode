@@ -11,17 +11,43 @@ namespace _100Days.ConsoleApp
             var res = "n";
             do 
             {
-
+                //SwitchStatement();
+                //ifElseStatement();
+                //Ternary();
                 //ControlStatementExample();
                 //LoopingStatement();
                 //LoopingExample();
                 //StringConcatenation();
                 //ClassAndObjects();
-                ClassAndObjectV2();
+                //ClassAndObjectV2();
+                PropertiesExample();
+
                 Console.WriteLine("Do you want to run once more? (y/n)");
                 res = Console.ReadLine();
 
             }while(res.ToUpper() == "Y");
+        }
+
+        static void PropertiesExample()
+        {
+            StudentInfo si = new StudentInfo(0,80,28);
+            si.Math = 101;
+            si.Science = -1;
+
+            Console.WriteLine($"Total = {si.Total}");
+            Console.WriteLine($"Percentage = {si.Percentage}");
+            Console.WriteLine($"Division = {si.Total}");
+
+            Console.WriteLine("============================");
+
+            Console.WriteLine("After changin the marks");
+
+            si.Math = 80;
+            si.Science = 73;
+
+            Console.WriteLine($"Total = {si.Total}");
+            Console.WriteLine($"Percentage = {si.Percentage}");
+            Console.WriteLine($"Division = {si.Total}");
         }
 
         static void ClassAndObjectV2()
