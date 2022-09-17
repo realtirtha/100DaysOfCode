@@ -33,6 +33,7 @@ namespace _100Days.ConsoleApp
             StudentInfo si = new StudentInfo(0,80,28);
             si.Math = 101;
             si.Science = -1;
+            si.Computer = 123;
 
             Console.WriteLine($"Total = {si.Total}");
             Console.WriteLine($"Percentage = {si.Percentage}");
@@ -44,6 +45,7 @@ namespace _100Days.ConsoleApp
 
             si.Math = 80;
             si.Science = 73;
+            si.Computer = -5;
 
             Console.WriteLine($"Total = {si.Total}");
             Console.WriteLine($"Percentage = {si.Percentage}");

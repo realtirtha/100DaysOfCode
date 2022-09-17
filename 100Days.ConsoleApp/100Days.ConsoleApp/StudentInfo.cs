@@ -105,11 +105,32 @@
             }
         }
 
+        private double _computer;
+        public double Computer
+        {
+            get { return _computer; }
+            set
+            {
+                if (value > _max)
+                {
+                    _computer = _max;
+                }
+                else if (value < _min)
+                {
+                    _computer = _min;
+                }
+                else
+                {
+                    _computer = value;
+                }
+            }
+        }
+
         public double Total
         {
             get
             {
-                return Math + Science;
+                return Math + Science + Computer;
             }
         }
 
@@ -117,7 +138,7 @@
         {
             get
             {
-                return (Total/(2*_max)) * 100;
+                return (Total/(3*_max)) * 100;
             }
         }
 
