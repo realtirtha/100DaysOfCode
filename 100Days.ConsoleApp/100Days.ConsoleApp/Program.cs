@@ -36,7 +36,7 @@ namespace _100Days.ConsoleApp
 
             Console.WriteLine($"Total = {si.Total}");
             Console.WriteLine($"Percentage = {si.Percentage}");
-            Console.WriteLine($"Division = {si.Total}");
+            Console.WriteLine($"Division = {si.Division}");
 
             Console.WriteLine("============================");
 
@@ -47,7 +47,7 @@ namespace _100Days.ConsoleApp
 
             Console.WriteLine($"Total = {si.Total}");
             Console.WriteLine($"Percentage = {si.Percentage}");
-            Console.WriteLine($"Division = {si.Total}");
+            Console.WriteLine($"Division = {si.Division}");
         }
 
         static void ClassAndObjectV2()

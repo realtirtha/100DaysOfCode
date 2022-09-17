@@ -63,7 +63,10 @@
         private double _math;
         public double Math
         {
-            get { return _math; }
+            get
+            {
+                return _math;
+            }
             set
             {
                 if (value > _max)
@@ -114,7 +117,7 @@
         {
             get
             {
-                return Total/(2*_max) / 100;
+                return (Total/(2*_max)) * 100;
             }
         }
 
