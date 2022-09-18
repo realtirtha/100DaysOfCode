@@ -31,13 +31,17 @@ namespace _100Days.ConsoleApp
             }while(res.ToUpper() == "Y");
         }
 
+        
+
         static void RegularExpression()
         {
+            string mail = "";
             Console.WriteLine("Enter the gmail to check pattern:");
-            string mail = Console.ReadLine();
+            mail = Console.ReadLine();
+
+            
 
             Pattern pt = new Pattern(mail);
-            
 
         }
 
