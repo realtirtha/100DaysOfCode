@@ -20,13 +20,27 @@ namespace _100Days.ConsoleApp
                 //StringConcatenation();
                 //ClassAndObjects();
                 //ClassAndObjectV2();
-                PropertiesExample();
+                //PropertiesExample();
+                RegularExpression();
+
+                Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
 
                 Console.WriteLine("Do you want to run once more? (y/n)");
                 res = Console.ReadLine();
 
             }while(res.ToUpper() == "Y");
         }
+
+        static void RegularExpression()
+        {
+            Console.WriteLine("Enter the gmail to check pattern:");
+            string mail = Console.ReadLine();
+
+            Pattern pt = new Pattern(mail);
+            
+
+        }
+
 
         static void PropertiesExample()
         {

@@ -36,6 +36,4 @@
 
         public readonly int age = 0;
     }
-    
-
 }
