@@ -58,7 +58,11 @@
 
         private double _min = 0;
         private double _max = 100;
-        private double _pass = 32;
+        private double _pass = 32; 
+
+        public double Min { get { return _min; } }
+        public double Max => _max;
+        public double Pass => _pass;
 
         private double _math;
         public double Math
