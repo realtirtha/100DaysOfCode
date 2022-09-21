@@ -21,7 +21,8 @@ namespace _100Days.ConsoleApp
                 //ClassAndObjects();
                 //ClassAndObjectV2();
                 //PropertiesExample();
-                RegularExpression();
+                //RegularExpression();
+                OperatorOverloadingExample();
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
 
@@ -60,9 +61,9 @@ namespace _100Days.ConsoleApp
             //total.Math = firstTerm.Math + secondTerm.Math + finalTerm. Math;
             //total.Science = firstTerm.Science + secondTerm.Science + finalTerm.Science;
             //total.English = firstTerm.English + secondTerm.English + finalTerm.English;
+               
 
-
-            StudentInfo final = firstTerm + secondTerm + finalTerm + secondTerm;
+            StudentInfo final = firstTerm + secondTerm + finalTerm + firstTerm + secondTerm;
         }
 
         
