@@ -189,6 +189,21 @@
 
             return total;
         }
+
+        public static StudentInfo operator -(StudentInfo first, StudentInfo second)
+        {
+            var totalMin = first.Min + second.Min;
+            var totalMax = first.Max + second.Max;
+            var totalPass = first.Pass - second.Pass;
+
+            StudentInfo total = new StudentInfo(totalMin, totalMax, totalPass);
+
+            total.Math = first.Math - second.Math;
+            total.Science = first.Science - second.Science;
+            total.English = first.English - second.English;
+
+            return total;
+        }
     }
 
 }

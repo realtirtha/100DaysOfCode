@@ -63,7 +63,7 @@ namespace _100Days.ConsoleApp
             //total.English = firstTerm.English + secondTerm.English + finalTerm.English;
                
 
-            StudentInfo final = firstTerm + secondTerm + finalTerm + firstTerm + secondTerm;
+            StudentInfo final = firstTerm + secondTerm + finalTerm - firstTerm + secondTerm;
         }
 
         
