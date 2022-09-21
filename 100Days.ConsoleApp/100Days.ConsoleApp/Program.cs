@@ -48,17 +48,21 @@ namespace _100Days.ConsoleApp
             finalTerm.Science = -1;
             finalTerm.Computer = 123;
 
-            var totalMin = firstTerm.Min + secondTerm.Min + finalTerm.Min;
-            var totalMax = firstTerm.Max + secondTerm.Max + finalTerm.Max;
-            var totalPass = firstTerm.Pass + secondTerm.Pass + finalTerm.Pass;
+            //var totalMin = firstTerm.Min + secondTerm.Min + finalTerm.Min;
+            //var totalMax = firstTerm.Max + secondTerm.Max + finalTerm.Max;
+            //var totalPass = firstTerm.Pass + secondTerm.Pass + finalTerm.Pass;
 
-            StudentInfo total = new StudentInfo(totalMin, totalMax, totalPass)
-            {
+            //StudentInfo total = new StudentInfo(totalMin, totalMax, totalPass)
+            //{
+               
+            //};
             
-            };
-            
-            total.Math = firstTerm.Math + secondTerm.Math + finalTerm. Math;
-            total.Science = firstTerm.Science + secondTerm.Science + finalTerm.Science;
+            //total.Math = firstTerm.Math + secondTerm.Math + finalTerm. Math;
+            //total.Science = firstTerm.Science + secondTerm.Science + finalTerm.Science;
+            //total.English = firstTerm.English + secondTerm.English + finalTerm.English;
+
+
+            StudentInfo final = firstTerm + secondTerm + finalTerm + secondTerm;
         }
 
         
