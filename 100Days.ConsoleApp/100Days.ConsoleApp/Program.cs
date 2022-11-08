@@ -35,13 +35,13 @@ namespace _100Days.ConsoleApp
         static void OperatorOverloadingExample()
         {
             StudentInfo firstTerm = new StudentInfo(0, 80, 28);
-            firstTerm.Math = 101;
-            firstTerm.Science = -1;
+            firstTerm.Math = 10;
+            firstTerm.Science = 20;
             firstTerm.Computer = 123;
 
             StudentInfo secondTerm = new StudentInfo(0, 80, 28);
-            secondTerm.Math = 101;
-            secondTerm.Science = -1;
+            secondTerm.Math = 10;
+            secondTerm.Science = 20;
             secondTerm.Computer = 123;
 
             StudentInfo finalTerm = new StudentInfo(0, 80, 28);
@@ -55,15 +55,22 @@ namespace _100Days.ConsoleApp
 
             //StudentInfo total = new StudentInfo(totalMin, totalMax, totalPass)
             //{
-               
+
             //};
-            
+
             //total.Math = firstTerm.Math + secondTerm.Math + finalTerm. Math;
             //total.Science = firstTerm.Science + secondTerm.Science + finalTerm.Science;
             //total.English = firstTerm.English + secondTerm.English + finalTerm.English;
-               
 
+            int i = (10 + 20) * (30 * 40);
             StudentInfo final = firstTerm + secondTerm + finalTerm - firstTerm + secondTerm;
+
+            //i++;
+            //firstTerm++;
+            //firstTerm += 5;
+
+            var eq = firstTerm + secondTerm;
+            
         }
 
         

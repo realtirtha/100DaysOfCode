@@ -204,6 +204,35 @@
 
             return total;
         }
+        public static StudentInfo operator ++(StudentInfo first)
+        {
+
+
+            first.Math++;
+            first.Science++;
+            first.English++;
+            return first;
+        }
+
+        public static StudentInfo operator +(StudentInfo first, int num)
+        {
+
+
+            first.Math+=5;
+            first.Science+=5;
+            first.English+=5;
+            return first;
+        }
+
+        public static bool operator == (StudentInfo obj1, StudentInfo obj2)
+        {
+            return obj1.Math == obj2.Math && obj1.Science == obj2.Science && obj1.English == obj2.English;
+        }
+        public static bool operator != (StudentInfo obj1, StudentInfo obj2)
+        {
+            return obj1.Math == obj2.Math && obj1.Science == obj2.Science && obj1.English == obj2.English;
+        }
+
     }
 
 }
