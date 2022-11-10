@@ -32,6 +32,12 @@ namespace _100Days.ConsoleApp
             }while(res.ToUpper() == "Y");
         }
 
+        static void FunctionCalls()
+        {
+            FunctionClass fc = new FunctionClass();
+            fc.FuncTwo(1, "abc");
+            fc.FuncTwo(b: "abc", a: 1);
+        }
         static void OperatorOverloadingExample()
         {
             StudentInfo firstTerm = new StudentInfo(0, 80, 28);
@@ -72,8 +78,6 @@ namespace _100Days.ConsoleApp
             var eq = firstTerm + secondTerm;
             
         }
-
-        
 
         static void RegularExpression()
         {
