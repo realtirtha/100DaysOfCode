@@ -28,5 +28,10 @@
         {
             result = a + b;
         }
+        public void AddV4(int a, int b, out int result)
+        {
+            //out varible ma xei value at least yak choti assign garnei parxa
+            result = a + b;
+        }
     }
 }

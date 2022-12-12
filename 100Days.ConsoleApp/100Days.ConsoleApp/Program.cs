@@ -22,7 +22,8 @@ namespace _100Days.ConsoleApp
                 //ClassAndObjectV2();
                 //PropertiesExample();
                 //RegularExpression();
-                OperatorOverloadingExample();
+                //OperatorOverloadingExample();
+                FunctionCalls();
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
 
@@ -44,6 +45,7 @@ namespace _100Days.ConsoleApp
             int b = 17;
             int res = 0;
             fc.AddV3(a, b, ref res);
+            fc.AddV4(a, b, out res);    
         }
         static void OperatorOverloadingExample()
         {
