@@ -37,6 +37,13 @@ namespace _100Days.ConsoleApp
             FunctionClass fc = new FunctionClass();
             fc.FuncTwo(1, "abc");
             fc.FuncTwo(b: "abc", a: 1);
+            fc.FuncTwo(10, f:20f);
+            fc.FuncTwo();
+
+            int a = 16;
+            int b = 17;
+            int res = 0;
+            fc.AddV3(a, b, ref res);
         }
         static void OperatorOverloadingExample()
         {
