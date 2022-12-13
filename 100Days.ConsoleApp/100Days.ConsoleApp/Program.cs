@@ -45,7 +45,9 @@ namespace _100Days.ConsoleApp
             int b = 17;
             int res = 0;
             fc.AddV3(a, b, ref res);
-            fc.AddV4(a, b, out res);    
+            fc.AddV4(a, b, out res);
+            var data = fc.FuncThree();
+            
         }
         static void OperatorOverloadingExample()
         {
