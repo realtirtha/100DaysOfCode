@@ -47,5 +47,17 @@
         {
             return (true, "Added Successfully", 10);
         }
+        public TestModel FuncFour()
+        {
+            return new TestModel() { Id = 1, Age = 20, Name = "Tirtha", Status = true };
+        }
+
+    }
+    public class TestModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public bool Status { get; set; }
+        public float Age { get; set; }
     }
 }
