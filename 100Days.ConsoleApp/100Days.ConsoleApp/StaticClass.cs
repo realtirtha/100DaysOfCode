@@ -15,5 +15,14 @@
         //may or may not be static
         public int i = 10;
 
+        public static int iStatic = 10;
+        public void FunctionOne()
+        {
+
+        }
+        public static void FunctionOneStatic()
+        {
+
+        }
     }
 }

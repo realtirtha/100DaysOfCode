@@ -23,7 +23,8 @@ namespace _100Days.ConsoleApp
                 //PropertiesExample();
                 //RegularExpression();
                 //OperatorOverloadingExample();
-                FunctionCalls();
+                //FunctionCalls();
+                StaticAndNonStaticExplanation();
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
 
@@ -33,8 +34,21 @@ namespace _100Days.ConsoleApp
             }while(res.ToUpper() == "Y");
         }
 
-        static void FunctionCalls()
+        static void StaticAndNonStaticExplanation()
         {
+            //StaticClass sc = new StaticClass();
+            StaticClass.i = 10;
+            StaticClass.FunctionOne();
+
+            NonStaticClass nsc= new NonStaticClass();
+            NonStaticClass.iStatic = 10;
+            nsc.i = 20;
+        }
+
+        private static void FunctionCalls()
+        {
+            int y = StaticClass.i;
+            StaticClass.i = 20;
             FunctionClass fc = new FunctionClass();
             fc.FuncTwo(1, "abc");
             fc.FuncTwo(b: "abc", a: 1);
