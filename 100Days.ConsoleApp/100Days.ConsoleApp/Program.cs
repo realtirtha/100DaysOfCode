@@ -24,6 +24,7 @@ namespace _100Days.ConsoleApp
                 //RegularExpression();
                 //OperatorOverloadingExample();
                 //FunctionCalls();
+
                 StaticAndNonStaticExplanation();
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
@@ -34,13 +35,14 @@ namespace _100Days.ConsoleApp
             }while(res.ToUpper() == "Y");
         }
 
-        static void StaticAndNonStaticExplanation()
+        private static void StaticAndNonStaticExplanation()
         {
             //StaticClass sc = new StaticClass();
             StaticClass.i = 10;
             StaticClass.FunctionOne();
 
-            NonStaticClass nsc= new NonStaticClass();
+            NonStaticClass nsc = new NonStaticClass();
+            NonStaticClass nsc1 = new NonStaticClass();
             NonStaticClass.iStatic = 10;
             nsc.i = 20;
         }
