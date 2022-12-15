@@ -43,8 +43,13 @@ namespace _100Days.ConsoleApp
 
             NonStaticClass nsc = new NonStaticClass();
             NonStaticClass nsc1 = new NonStaticClass();
-            NonStaticClass.iStatic = 10;
-            nsc.i = 20;
+            NonStaticClass nsc2 = new NonStaticClass();
+            nsc.FunctionOne();
+            nsc1.FunctionOne();
+            nsc2.FunctionOne();
+
+            //NonStaticClass.iStatic = 10;
+            //nsc.i = 20;
         }
 
         private static void FunctionCalls()
