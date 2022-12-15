@@ -15,5 +15,6 @@
             }
 
         }
+        public string CompanyName;
     }
 }

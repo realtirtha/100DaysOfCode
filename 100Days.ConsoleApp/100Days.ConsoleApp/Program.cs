@@ -38,7 +38,7 @@ namespace _100Days.ConsoleApp
 
         private static void SingletonExplained()
         {
-            
+            Singleton.Instance.CompanyName = "ABC";
         }
         private static void StaticAndNonStaticExplanation()
         {
