@@ -26,6 +26,7 @@ namespace _100Days.ConsoleApp
                 //FunctionCalls();
 
                 StaticAndNonStaticExplanation();
+                
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
 
@@ -35,6 +36,10 @@ namespace _100Days.ConsoleApp
             }while(res.ToUpper() == "Y");
         }
 
+        private static void SingletonExplained()
+        {
+            
+        }
         private static void StaticAndNonStaticExplanation()
         {
             //StaticClass sc = new StaticClass();
