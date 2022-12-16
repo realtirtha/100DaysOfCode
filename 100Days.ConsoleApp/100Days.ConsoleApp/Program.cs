@@ -35,6 +35,11 @@ namespace _100Days.ConsoleApp
 
             }while(res.ToUpper() == "Y");
         }
+        
+        private static void InheritanceExplained()
+        {
+
+        }
 
         private static void SingletonExplained()
         {
