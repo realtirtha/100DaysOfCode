@@ -24,9 +24,8 @@ namespace _100Days.ConsoleApp
                 //RegularExpression();
                 //OperatorOverloadingExample();
                 //FunctionCalls();
-
-                StaticAndNonStaticExplanation();
-                
+                //StaticAndNonStaticExplanation();
+                InheritanceExample();
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
 
@@ -36,9 +35,12 @@ namespace _100Days.ConsoleApp
             }while(res.ToUpper() == "Y");
         }
         
-        private static void InheritanceExplained()
+        private static void InheritanceExample()
         {
-
+            LivingThings l1 = new LivingThings();
+            Animal a1 = new Animal();
+            Plant p1 = new Plant();
+            Human h1 = new Human();
         }
 
         private static void SingletonExplained()
