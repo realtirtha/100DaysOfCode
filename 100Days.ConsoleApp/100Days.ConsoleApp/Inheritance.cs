@@ -6,11 +6,11 @@
     }
     public class LivingThings
     {
-        public string Name;
-        public LivingThings()
-        {
-            Name = "Default";
-        }
+        protected string Name;
+        //public LivingThings()
+        //{
+        //    Name = "Default";
+        //}
         public LivingThings(string name)
         {
             Name = name;
@@ -19,18 +19,18 @@
 
     public class Animal : LivingThings
     {
-        public Animal()
+        public Animal() : base("Default")
         {
             Name = "Animal";
         }
-        public Animal(string name)
+        public Animal(string name) : base(name)
         {
             Name = name;
         }
     }
     public class Plant : LivingThings
     {
-        public Plant()
+        public Plant() : base("Default")
         {
 
         }

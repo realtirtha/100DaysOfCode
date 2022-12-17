@@ -37,10 +37,19 @@ namespace _100Days.ConsoleApp
         
         private static void InheritanceExample()
         {
+            //LivingThings l1 = new LivingThings();
+
+            ////l1.Name = "";  //cannot be accessed
+            //Animal a1 = new Animal();
+            //Plant p1 = new Plant();
+            //Human h1 = new Human();
+
             LivingThings l1 = new LivingThings();
+            LivingThings l2 = new LivingThings("abc");
+
             Animal a1 = new Animal();
-            Plant p1 = new Plant();
-            Human h1 = new Human();
+            Animal a2= new Animal("Dog");
+
         }
 
         private static void SingletonExplained()
