@@ -7,10 +7,6 @@
     public class LivingThings
     {
         protected string Name;
-        //public LivingThings()
-        //{
-        //    Name = "Default";
-        //}
         public LivingThings(string name)
         {
             Name = name;
@@ -37,7 +33,7 @@
     }  
     public class Vertibrates : Animal
     {
-        public Vertibrates()
+        public Vertibrates() : base()
         {
 
         }
