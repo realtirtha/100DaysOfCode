@@ -41,19 +41,18 @@ namespace _100Days.ConsoleApp
 
             ////l1.Name = "";  //cannot be accessed
             //Animal a1 = new Animal();
-            Plant p1 = new Plant();
             //Human h1 = new Human();
-
             //LivingThings l1 = new LivingThings();
+
+            LivingThings p1 = new Plant();
             LivingThings l2 = new LivingThings("abc");
 
-            Animal a1 = new Animal();
-            Animal a2= new Animal("Dog");
+            LivingThings a1 = new Animal();
+            LivingThings a2= new Animal("Dog");
+            LivingThings h1 = new();
 
             l2.Eat();
             a1.Eat();
-
-            Human h1 = new();
             p1.Eat();
             h1.Eat();
         }

@@ -15,7 +15,7 @@
         {
             Name = name;
         }
-        public void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine("Living things can eat");
 
@@ -32,7 +32,7 @@
         {
             Name = name;
         }
-        public void Eat()
+        public override void Eat()
         {
             Console.WriteLine("Animal can eat");
 
@@ -44,7 +44,7 @@
         {
 
         }
-        public void Eat()
+        public override void Eat()
         {
             Console.WriteLine("Plant can grow");
         }
