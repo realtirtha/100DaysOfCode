@@ -49,12 +49,12 @@ namespace _100Days.ConsoleApp
 
             LivingThings a1 = new Animal();
             LivingThings a2= new Animal("Dog");
-            LivingThings h1 = new();
+            //LivingThings h1 = new Human();
 
             l2.Eat();
             a1.Eat();
             p1.Eat();
-            h1.Eat();
+            //h1.Eat();
         }
 
         private static void SingletonExplained()
