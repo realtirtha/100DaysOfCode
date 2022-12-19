@@ -55,6 +55,10 @@
         {
 
         }
+        public override void Eat()
+        {
+            Console.WriteLine("Vertibrates can eat");
+        }
     }
     public class Invertibrates : Animal
     {
@@ -68,6 +72,10 @@
         public Human()
         {
 
+        }
+        public void Eat()
+        {
+            Console.WriteLine("Humans can eat");
         }
     }
 }
