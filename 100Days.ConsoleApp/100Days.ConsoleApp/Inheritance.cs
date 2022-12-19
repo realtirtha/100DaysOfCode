@@ -55,13 +55,13 @@
         {
 
         }
-        public override void Eat()
+        public virtual void Eats()
         {
             Console.WriteLine("Vertibrates can eat");
         }
     }
     public class Invertibrates : Animal
-    {
+    { 
         public Invertibrates()
         {
 
@@ -73,7 +73,7 @@
         {
 
         }
-        public void Eat()
+        public override void Eats()
         {
             Console.WriteLine("Humans can eat");
         }
