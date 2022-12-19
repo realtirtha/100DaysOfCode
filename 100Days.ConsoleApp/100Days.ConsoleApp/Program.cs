@@ -55,6 +55,9 @@ namespace _100Days.ConsoleApp
             a1.Eat();
             p1.Eat();
             h1.Eat();
+
+            Console.WriteLine($"{h1.ToString()}");
+            Console.WriteLine($"{l2.ToString()}");
         }
 
         private static void SingletonExplained()

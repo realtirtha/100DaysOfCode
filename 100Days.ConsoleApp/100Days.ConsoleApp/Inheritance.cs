@@ -20,6 +20,8 @@
             Console.WriteLine("Living things can eat");
 
         }
+
+        
     }
 
     public class Animal : LivingThings
@@ -77,5 +79,11 @@
         {
             Console.WriteLine("Humans can eat");
         }
+
+        public override string ToString()
+        {
+            return "HI! iam from  human object";
+        }
+         
     }
 }
