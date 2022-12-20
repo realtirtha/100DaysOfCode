@@ -25,7 +25,8 @@ namespace _100Days.ConsoleApp
                 //OperatorOverloadingExample();
                 //FunctionCalls();
                 //StaticAndNonStaticExplanation();
-                InheritanceExample();
+                //InheritanceExample();
+                InterfaceExample();
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
 
@@ -33,6 +34,55 @@ namespace _100Days.ConsoleApp
                 res = Console.ReadLine();
 
             }while(res.ToUpper() == "Y");
+        }
+        static void InterfaceExample()
+        {
+            Console.WriteLine(" Press\n1 for square\n2 for Rectangle");
+            var choice = Convert.ToInt32(Console.ReadLine());
+
+            var shape = ShapeFactory(choice);
+            if (shape != null)
+            {
+                shape.GetInput();
+                shape.Area();
+                shape.Perimeter();
+            }
+            
+        }
+        static IShape ShapeFactory(int choice)
+        {
+            switch (choice)
+            {
+                case 1:
+                    return new Square();
+                case 2:
+                    return new Rectangle();
+                    case 3:
+                    return new Circle();
+                default:
+                    return null;
+            }
+        }
+
+        static void WithoutInterfaceExample()
+        {
+            Console.WriteLine(" Press\n1 for square\n2 for Rectangle");
+            var choice = Console.ReadLine();
+
+            if (choice == "1")
+            {
+                Square sq = new Square();
+                sq.GetInput();
+                sq.Area();
+                sq.Perimeter();
+            }
+            else if (choice == "2")
+            {
+                Rectangle r = new Rectangle();
+                r.GetInput();
+                r.Area();
+                r.Perimeter();   
+            }
         }
         
         private static void InheritanceExample()
