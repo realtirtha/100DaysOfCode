@@ -102,19 +102,24 @@
     }
     public class Circle : IShape
     {
+        private double radius;
+        
         void IShape.Area()
         {
-            throw new NotImplementedException();
+            var area = Math.PI * Math.Pow(radius,2);
+            Console.WriteLine($"Area = {area}");
         }
-
+            
         void IShape.GetInput()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("ENter the radius: ");
+            radius = Convert.ToDouble(Console.ReadLine());
         }
 
         void IShape.Perimeter()
         {
-            throw new NotImplementedException();
+            var peri = 2 * Math.PI * radius;
+            Console.WriteLine($"Perimeter = {peri}");
         }
     }
     public class Triangle : IShape
@@ -130,6 +135,23 @@
         public void Perimeter()
         {
 
+        }
+    }
+    public class Pentagon : IShape
+    {
+        public void Area()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetInput()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Perimeter()
+        {
+            throw new NotImplementedException();
         }
     }
 }

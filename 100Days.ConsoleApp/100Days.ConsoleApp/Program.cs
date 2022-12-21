@@ -26,6 +26,7 @@ namespace _100Days.ConsoleApp
                 //FunctionCalls();
                 //StaticAndNonStaticExplanation();
                 //InheritanceExample();
+                //WithoutInterfaceExample();
                 InterfaceExample();
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
@@ -61,6 +62,8 @@ namespace _100Days.ConsoleApp
                     return new Circle();
                 case 4:
                     return new Triangle();
+                case 5:
+                    return new Pentagon();
                 default:
                     return null;
             }
