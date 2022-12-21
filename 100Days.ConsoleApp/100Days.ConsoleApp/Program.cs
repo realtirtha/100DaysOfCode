@@ -37,7 +37,7 @@ namespace _100Days.ConsoleApp
         }
         static void InterfaceExample()
         {
-            Console.WriteLine(" Press\n1 for square\n2 for Rectangle");
+            Console.WriteLine(" Press\n1 for square\n2 for Rectangle \n3 for Circle \n4 for Triangle");
             var choice = Convert.ToInt32(Console.ReadLine());
 
             var shape = ShapeFactory(choice);
@@ -57,8 +57,10 @@ namespace _100Days.ConsoleApp
                     return new Square();
                 case 2:
                     return new Rectangle();
-                    case 3:
+                case 3:
                     return new Circle();
+                case 4:
+                    return new Triangle();
                 default:
                     return null;
             }
@@ -82,6 +84,14 @@ namespace _100Days.ConsoleApp
                 r.GetInput();
                 r.Area();
                 r.Perimeter();   
+            }
+            else if (choice == "3")
+            {
+                Triangle t = new Triangle();
+                t.GetInput();
+                t.Area();
+                t.Perimeter();
+
             }
         }
         

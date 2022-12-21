@@ -106,4 +106,19 @@
             throw new NotImplementedException();
         }
     }
+    public class Triangle : IShape
+    {
+        public void GetInput()
+        {
+
+        }
+        public void Area()
+        {
+
+        }
+        public void Perimeter()
+        {
+
+        }
+    }
 }
