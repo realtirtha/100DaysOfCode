@@ -47,8 +47,9 @@
     }
 
 
-    public class Square : IShape
+    public class Square : IShape, IInterfaces
     {
+         
         private double length;
         public void GetInput()
         {
@@ -64,6 +65,16 @@
         {
             var peri = 4*length;
             Console.WriteLine($"Perimeter = {peri}");
+        }
+
+        public int Add(int a, int b)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add()
+        {
+            throw new NotImplementedException();
         }
     }
 

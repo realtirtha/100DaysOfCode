@@ -38,7 +38,7 @@ namespace _100Days.ConsoleApp
         static void InterfaceExample()
         {
             Console.WriteLine(" Press\n1 for square\n2 for Rectangle \n3 for Circle \n4 for Triangle");
-            var choice = Convert.ToInt32(Console.ReadLine());
+              var choice = Convert.ToInt32(Console.ReadLine());
 
             var shape = ShapeFactory(choice);
             if (shape != null)
