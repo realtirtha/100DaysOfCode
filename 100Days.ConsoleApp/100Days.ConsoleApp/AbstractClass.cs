@@ -23,7 +23,7 @@
         }
         public void Perimeter()
         {
-            Console.WriteLine($"Perimeter =  {Perimeter}");
+            Console.WriteLine($"Perimeter =  {perimeter}");
         }
         public void GetInput()
         {

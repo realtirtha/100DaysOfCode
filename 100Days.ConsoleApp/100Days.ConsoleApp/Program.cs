@@ -40,13 +40,12 @@ namespace _100Days.ConsoleApp
 
         static void AbstractExample()
         {
-            Console.WriteLine(" Press\n1 for square\n2 for Rectangle \n3 for Circle \n4 for Triangle");
+            Console.WriteLine(" Press\n1 for square\n2 for Rectangle \n");
             var choice = Convert.ToInt32(Console.ReadLine());
 
             var shape = AbstractShapeFactory(choice);
             if (shape != null)
             {
-                shape.GetInput();
                 shape.GetInput();
                 shape.Area();
                 shape.Perimeter();
