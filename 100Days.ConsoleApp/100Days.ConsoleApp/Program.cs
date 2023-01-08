@@ -27,7 +27,8 @@ namespace _100Days.ConsoleApp
                 //StaticAndNonStaticExplanation();
                 //InheritanceExample();
                 //WithoutInterfaceExample();
-                InterfaceExample();
+                //InterfaceExample();
+                AbstractExample();
 
                 Console.WriteLine("\n- - - - - - - - - - - - - - - - - - -");
 
@@ -35,6 +36,35 @@ namespace _100Days.ConsoleApp
                 res = Console.ReadLine();
 
             }while(res.ToUpper() == "Y");
+        }
+
+        static void AbstractExample()
+        {
+            Console.WriteLine(" Press\n1 for square\n2 for Rectangle \n3 for Circle \n4 for Triangle");
+            var choice = Convert.ToInt32(Console.ReadLine());
+
+            var shape = AbstractShapeFactory(choice);
+            if (shape != null)
+            {
+                shape.GetInput();
+                shape.GetInput();
+                shape.Area();
+                shape.Perimeter();
+            }
+
+        }
+
+        private static AShape AbstractShapeFactory(int choice)
+        {
+            switch (choice)
+            {
+                case 1:
+                    return new ASquare();
+                case 2:
+                    return new ARectangle();
+                default:
+                    return null;
+            }
         }
         static void InterfaceExample()
         {

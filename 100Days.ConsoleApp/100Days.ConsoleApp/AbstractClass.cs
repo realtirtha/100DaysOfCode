@@ -49,4 +49,23 @@
             length = Convert.ToDouble(Console.ReadLine());
         }
     }
+
+    public class ARectangle : AShape
+    {
+        private double length, breadth;
+        protected override void getInput()
+        {
+            Console.WriteLine("Enter the length");
+            length = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the breadth");
+            breadth = Convert.ToDouble(Console.ReadLine());
+        }
+
+        protected override void calculate()
+        {
+            area = length * breadth;
+            perimeter = 2 * (length + breadth);
+
+        }
+    }
 }
