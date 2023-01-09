@@ -40,8 +40,7 @@ namespace _100Days.ConsoleApp
 
         static void AbstractExample()
         {
-            Console.WriteLine(" Press\n1 for square\n2 for Rectangle \n");
-            var choice = Convert.ToInt32(Console.ReadLine());
+            int choice = getChoice();
 
             var shape = AbstractShapeFactory(choice);
             if (shape != null)
@@ -51,6 +50,13 @@ namespace _100Days.ConsoleApp
                 shape.Perimeter();
             }
 
+        }
+
+        private static int getChoice()
+        {
+            Console.WriteLine(" Press\n1 for square\n2 for Rectangle \n");
+            var choice = Convert.ToInt32(Console.ReadLine());
+            return choice;
         }
 
         private static AShape AbstractShapeFactory(int choice)
@@ -98,7 +104,7 @@ namespace _100Days.ConsoleApp
             }
         }
 
-        static void WithoutInterfaceExample()
+        static void    WithoutInterfaceExample()
         {
             Console.WriteLine(" Press\n1 for square\n2 for Rectangle");
             var choice = Console.ReadLine();
